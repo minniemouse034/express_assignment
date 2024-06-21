@@ -11,7 +11,7 @@ const data = {
 };
 
 app.get("/profiles", (req, res) => {
-  return res.json(data);
+  return res.status(200).json(data);
 });
 
 app.listen(port, () => {
